@@ -11,11 +11,12 @@ body {
 
 /* The width property has been changed to max-width */
 .content-wrapper {
-	width: 90%;
 	max-width: 1200px;
+	width: 90%;
 	display: flex;
  	justify-content: center;
   	flex-flow: row wrap;
+
 }
 
 h1,
@@ -67,19 +68,20 @@ header h1 span {
 }
 
 header nav {
-	padding: 46px 0;
+	padding: 20px 0;
 }
 
 header nav ul {
 	margin: 0;
 	padding: 0;
+	list-style: none;
 }
 
 header nav ul li {
 	font-size: .875rem;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding: 0 10px;
+	padding: 10px 0;
 	width: 100%;
 }
 
@@ -96,7 +98,6 @@ header nav ul li a {
 	border-top: 3px solid #77A466;
 	border-bottom: 3px solid #77a466;
 }
-
 
 .main-title h2 {
 	color: #45610E;
@@ -119,7 +120,6 @@ header nav ul li a {
 .section-two,
 .section-three {
 	box-sizing: border-box;
-	padding: 0 40px;
 }
 
 .section-one {
@@ -130,8 +130,8 @@ header nav ul li a {
 .section-two {
 	/*width: 42%;*/
 	width: 100%;
-	border-left: 5px solid #EEE;
-	border-right: 5px solid #EEE;
+	border-top: 5px solid #EEE;
+	border-bottom: 5px solid #EEE;
 }
 
 .section-three {
@@ -150,17 +150,16 @@ header nav ul li a {
 
 .menu-list li {
 	color: #45610E;
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 36px;
 }
 
 /******** FOOTER STYLES ********/
 /* The widths are in a percentage! */
 footer {
+	margin-top: 8px;
 	display: flex;
     justify-content: center;
-	text-align: center;
-	margin-top: 8px;
 }
 
 footer span {
@@ -174,8 +173,6 @@ footer span {
 @media all and (min-width: 768px) {
 
 .bottom-section .content-wrapper {
-		border-top: 5px solid #EEE;
-		border-bottom: 5px solid #EEE;
 		justify-content: space-evenly;
 	}
 
@@ -207,7 +204,7 @@ body {
 header .content-wrapper{
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 0px;
+	padding: 20px 0;
 }
 
 header h1 {
